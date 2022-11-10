@@ -1,9 +1,12 @@
 import React from 'react';
+import NavbarTop from '../components/NavbarTop';
+import {Outlet} from 'react-router-dom';
 
 const Root = () => {
     return (
         <div>
-            test
+            <NavbarTop></NavbarTop>
+            <Outlet></Outlet>
         </div>
     );
 };

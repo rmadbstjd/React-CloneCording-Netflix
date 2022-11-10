@@ -1,6 +1,6 @@
 import "./App.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-
+import "bootstrap/dist/css/bootstrap.min.css";
 import Main from "./pages/Main";
 import Movies from "./pages/Movies";
 import MovieDetail from "./pages/MovieDetail";
