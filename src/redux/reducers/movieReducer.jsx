@@ -3,7 +3,7 @@ import {createSlice} from '@reduxjs/toolkit';
 let initialState ={
     popularMovies : {},
     topRatedMovies :{},
-    upComingMovies :{}
+    upComingMovies:{}
 };
 
 const movieSlice = createSlice({

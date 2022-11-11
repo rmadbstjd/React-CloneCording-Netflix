@@ -10,6 +10,7 @@ function getMovies() {
         const upComingMovieApi = api.get(`https://api.themoviedb.org/3/movie/upcoming?api_key=${API_KEY}&language=en-US&page=1`)
         let [popularMovies, topRatedMovies, upComingMovies] = await Promise.all([popularMovieApi,topRatedMovieApi,upComingMovieApi]);
         let [popularMoviesData, topRatedMoviesData, upComingMoviesData] = [popularMovies.data,topRatedMovies.data,upComingMovies.data];
+        
         dispatch(movieActions.getAllMovies({popularMoviesData,topRatedMoviesData,upComingMoviesData}));
         
     };
