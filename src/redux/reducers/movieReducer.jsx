@@ -3,7 +3,8 @@ import {createSlice} from '@reduxjs/toolkit';
 let initialState ={
     popularMovies : {},
     topRatedMovies :{},
-    upComingMovies:{}
+    upComingMovies:{},
+    loading : true,
 };
 
 const movieSlice = createSlice({
@@ -15,7 +16,14 @@ const movieSlice = createSlice({
             state.popularMovies = action.payload.popularMoviesData;
             state.topRatedMovies = action.payload.topRatedMoviesdData;
             state.upComingMovies = action.payload.upComingMoviesData;
+            state.loading = false;
             
+        },
+        getMoviesRequest(state, action) {
+            state.loading = true;
+        },
+        getMoviesFailure(state, action) {
+            state.loading = false;
         }
     }
 });
