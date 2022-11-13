@@ -1,0 +1,51 @@
+.body {
+    color:white;
+    display:flex;
+    background-color: black;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+.containerTop {
+    border : solid black 1px;
+    width : 1024px;
+    height : 500px;
+    display:flex;
+    justify-content: center;
+}
+.img {
+    height : 450px;
+    width: 300px;
+}
+.hr {
+    width: 600px;
+    
+    color : black;
+}
+.overview {
+    width: 500px;
+}
+.containerBottom{
+    border : solid black 1px;
+    width : 1024px;
+    height : 100%;
+    background-color: black;
+    color : white;
+}
+.reviewBtn {
+    border : 0px;
+    width : 150px;
+    height : 60px;
+    background-color: red;
+    color: white;
+}
+.relatedBtn {
+    margin-left : 40px; 
+    border : 0px;
+    width : 200px;
+    height : 60px;
+    background-color: red;
+    color : white;
+}
