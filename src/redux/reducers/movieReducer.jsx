@@ -8,6 +8,8 @@ let initialState = {
     genreList : [],
     movieDetail : {},
     movieReviews : {},
+    movieSimilar : {},
+    showBtn : true,
 };
 
 const movieSlice = createSlice({
@@ -34,6 +36,7 @@ const movieSlice = createSlice({
         getMovieDetail(state, action) {
             state.movieDetail = action.payload.movieDetailData;
             state.movieReviews = action.payload.movieReviewsData;
+            state.movieSimilar = action.payload.movieSimilarData;
         }
     }
 });

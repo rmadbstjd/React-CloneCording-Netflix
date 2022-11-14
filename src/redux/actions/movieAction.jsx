@@ -28,11 +28,12 @@ function getMovieDetail(id) {
             
             const movieDetailApi =  api.get(`movie/${id}?api_key=${API_KEY}&language=en-US`);
             const movieReviewsApi = api.get(`movie/${id}/reviews?api_key=${API_KEY}&language=en-US&page=1`);
+            const movieSimilarApi = api.get(`movie/${id}/similar?api_key=${API_KEY}&language=en-US&page=1`);
+            let [movieDetail,movieReviews,movieSimilar]= await Promise.all([movieDetailApi,movieReviewsApi,movieSimilarApi]);
             
-            let [movieDetail,movieReviews]= await Promise.all([movieDetailApi,movieReviewsApi]);
-            let [movieDetailData, movieReviewsData] = [movieDetail.data, movieReviews.data];
-            console.log("리뷰",movieReviewsData);
-            dispatch(movieActions.getMovieDetail({movieDetailData, movieReviewsData}));
+            let [movieDetailData, movieReviewsData,movieSimilarData] = [movieDetail.data, movieReviews.data, movieSimilar.data];
+            console.log("similar",movieSimilar.data);
+            dispatch(movieActions.getMovieDetail({movieDetailData, movieReviewsData, movieSimilarData}));
         }
         catch(error) {
 

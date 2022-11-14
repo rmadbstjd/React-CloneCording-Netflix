@@ -6,7 +6,8 @@
 .overay {
     opacity: 0;
 }
-.overay:hover {
-    opacity: 1;
-}
 
+.overay:hover {
+    opacity : 1;
+    cursor:pointer;
+}
