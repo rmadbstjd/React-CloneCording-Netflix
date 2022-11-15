@@ -7,7 +7,7 @@ import {ClipLoader} from 'react-spinners';
 import styles from './Main.module.css';
 const Main = () => {
     const {popularMovies, topRatedMovies, upComingMovies, loading} = useSelector((state) => state.movie);
-
+    
     const dispatch = useDispatch();
     useEffect(() => {
         dispatch(movieAction.getMovies());

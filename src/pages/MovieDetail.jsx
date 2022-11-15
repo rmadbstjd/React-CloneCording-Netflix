@@ -51,8 +51,8 @@ const MovieDetail = () => {
                     <Badge className={styles.badge} bg="danger">RunTime</Badge>{movieDetail.runtime}minutes
                     </div>
                     <hr className={styles.hr}></hr>
-                    <Button onClick={() =>{setModalOpen((prev) =>!prev)}}>예고편 보기</Button>
-                    {modalOpen && <Modal></Modal>}
+                    <Button  variant="danger" onClick={() =>{setModalOpen((prev) =>!prev)}}>Watch Trailer</Button>
+                    {modalOpen && <Modal setModalOpen={setModalOpen}></Modal>}
                 </div>
                 
             </div>

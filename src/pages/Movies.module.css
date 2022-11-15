@@ -1,0 +1,44 @@
+.body{
+    display:flex;
+    justify-content: center;
+    background-color: black;
+    height : 100%;
+}
+.container {
+    border : solid black 1px;
+    width: 1000px;
+    height : 4600px;
+    background-color: black;
+    margin-left : -300px;
+    display:flex;
+    justify-content: space-between;
+   
+    
+}
+.leftBox {
+    width : 330px;
+    background-color: black;
+}
+.rightBox {
+    display:flex;
+    flex-wrap: wrap;
+    width: 670px;
+    background-color: black;
+}
+.filter {
+    width: 300px;
+    border :solid white 1px;
+    border-radius : 5px;
+    height : 45px;
+    color : white;
+    line-height : 40px;
+    padding-left : 10px;
+    margin-bottom : 30px;
+    cursor:pointer;
+}
+.rightArrow{
+    margin-top : 10px;
+    margin-right: 15px;
+    float:right;
+    
+}

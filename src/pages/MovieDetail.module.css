@@ -65,6 +65,7 @@
     justify-content: space-evenly;
 }
 .reviewBtn {
+    border-radius : 5px;
     border : 0px;
     width : 150px;
     height : 60px;
@@ -72,6 +73,7 @@
     color: white;
 }
 .reviewBtn2 {
+    border-radius : 5px;
     border : 0px;
     width : 150px;
     height : 60px;
@@ -79,6 +81,7 @@
     color : gray;
 }
 .relatedBtn {
+    border-radius : 5px;
     margin-left : 40px; 
     border : 0px;
     width : 200px;
@@ -87,6 +90,7 @@
     color : white;
 }
 .relatedBtn2 {
+    
     margin-left : 40px; 
     border : 0px;
     width : 200px;
@@ -113,6 +117,7 @@
     margin-right : 5px;
 }
 .adult {
+    
     margin-left : 5px;
     color : red;
     display: inline-block;
